@@ -64,7 +64,7 @@ header .navbar-nav a {
   display: block;
   width: 100%;
 }
-.btn_wrap .btn.btn-success {
+.btn.btn-success {
   background-color: var(--btn_color);
   border: none;
 }
@@ -461,4 +461,73 @@ footer .foot_menu ul li a:hover {
   background-color: var(--main_color);
   color: var(--white);
   border: none;
+}
+.checkout_form_field form li {
+  display: block;
+}
+.checkout_form_field form label {
+  display: block;
+}
+.checkout_form_field form input {
+  display: block;
+  width: 100%;
+}
+
+.order_details table thead tr th {
+  background-color: var(--text_default_color);
+  color: var(--white);
+  padding: 10px;
+}
+.order_details table tbody tr td {
+  padding: 10px;
+  background-color: var(--ligh-grey);
+}
+.order_details table tfoot tr th,
+.order_details table tfoot tr td {
+  background-color: var(--light_green);
+  padding: 10px;
+}
+
+.checkout_form_field ul li label {
+  display: block;
+}
+.checkout_form_field ul li input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 7px;
+}
+.checkout_form_field ul li {
+  margin-bottom: 10px;
+}
+.custom_form {
+  box-shadow: 0px 0px 10px #ccc;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+}
+.custom_form input {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+.custom_form .redirect_link a,
+.custom_form .redirect_link a:focus {
+  color: var(--main_color);
+}
+.custom_form textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  resize: none;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 10px;
 }

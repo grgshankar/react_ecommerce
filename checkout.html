@@ -59,70 +59,113 @@
     <div class="mainWrapper">
         <div class="container">
             <div class="row">
-                <div class="col col-sm-12 col-lg-9 cart_table_details">
-                    <form>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>S.N</th>
-                                    <th>Image</th>
-                                    <th>Product</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
-                                    <th>Subtotal</th>
-                                    <th>Remove</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src="./assets/images/baby_shoes.jpg" alt="baby shoes"></td>
-                                    <td>Baby Shoes</td>
-                                    <td>Rs.1200</td>
-                                    <td><input type="number" min="1"></td>
-                                    <td>Rs.1200</td>
-                                    <td><button class="btn_remove"><i class="fa-regular fa-circle-xmark"></i></button>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>2</td>
-                                    <td><img src="./assets/images/sweater.jpg" alt="sweater"></td>
-                                    <td>Winter Sweater</td>
-                                    <td>Rs.1500</td>
-                                    <td><input type="number" min="1"></td>
-                                    <td>Rs.1500</td>
-                                    <td><button class="btn_remove"><i class="fa-regular fa-circle-xmark"></i></button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="btn_update">
-                            <a href="products.html" class="btn btn-warning">Update Cart</a>
+                <div class="col col-sm-12 checkout_main_wrapper mt-4 mb-4">
+                    <h1>Checkout</h1>
+                    <form action="">
+                        <div class="row">
+                            <div class="col col-sm-12 col-lg-8">
+                                <h3>Billing Details</h3>
+                                <div class="checkout_form_field">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <label for="firstname">First name <sup>*</sup></label>
+                                            <input type="text" name="firstname" required>
+                                        </li>
+                                        <li>
+                                            <label for="lastname">Last name</label>
+                                            <input type="text" name="lastname">
+                                        </li>
+                                        <li>
+                                            <label for="country">Country/Region</label>
+                                            <input type="text" name="country">
+                                        </li>
+                                        <li>
+                                            <label for="address">Address</label>
+                                            <input type="text" name="address">
+                                        </li>
+                                        <li>
+                                            <label for="phone">Phone <sup>*</sup></label>
+                                            <input type="number" name="phone" required>
+                                        </li>
+                                        <li>
+                                            <label for="email">Email Address <sup>*</sup></label>
+                                            <input type="email" name="email" required>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col col-sm-12 col-lg-4">
+                                <h3>Shipping Address</h3>
+                                <div class="checkout_form_field">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <label for="firstname">First name <sup>*</sup></label>
+                                            <input type="text" name="firstname" required>
+                                        </li>
+                                        <li>
+                                            <label for="lastname">Last name</label>
+                                            <input type="text" name="lastname">
+                                        </li>
+                                        <li>
+                                            <label for="country">Country/Region</label>
+                                            <input type="text" name="country">
+                                        </li>
+                                        <li>
+                                            <label for="address">Address</label>
+                                            <input type="text" name="address">
+                                        </li>
+                                        <li>
+                                            <label for="phone">Phone <sup>*</sup></label>
+                                            <input type="number" name="phone" required>
+                                        </li>
+                                        <li>
+                                            <label for="email">Email Address <sup>*</sup></label>
+                                            <input type="email" name="email" required>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+                        <div class="order_details">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Baby Shoes</td>
+                                        <td>Rs.1200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Winter Sweater</td>
+                                        <td>Rs.1500</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Subtotal</th>
+                                        <td>Rs.2700</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Shipping</th>
+                                        <td>Free shipping</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total</th>
+                                        <td>Rs.2700</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="payment_method mt-3 mb-3">
+                            <input type="radio">
+                            Cash on Delivery
+                        </div>
+                        <button class="btn btn-success">Place Order</button>
                     </form>
-                </div>
-                <div class="col col-sm-12 col-lg-3">
-                    <div class="checkout_table">
-                        <h2>Cart Totals</h2>
-                        <table>
-                            <tr>
-                                <th>Subtotal</th>
-                                <td>Rs.1200</td>
-                            </tr>
-                            <tr>
-                                <th>Shipping</th>
-                                <td>Free shipping to Bagmati</td>
-                            </tr>
-                            <tr>
-                                <th>Total</th>
-                                <td>Rs.1200</td>
-                            </tr>
-                        </table>
-                        <div class="btn_wrap">
-                            <a href="checkout.html" class="btn btn-success">Proceed to checkout</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
