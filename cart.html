@@ -58,107 +58,73 @@
     </header>
     <div class="mainWrapper">
         <div class="container">
-            <div class="row products_details mt-5 mb-5">
-                <div class="col col-sm-12 col-lg-4">
-                    <div class="img_wrap">
-                        <img src="./assets/images/baby_shoes.jpg" alt="Shoes">
-                    </div>
+            <div class="row">
+                <div class="col col-sm-12 col-lg-9 cart_table_details">
+                    <form>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>S.N</th>
+                                    <th>Image</th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Subtotal</th>
+                                    <th>Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="./assets/images/baby_shoes.jpg" alt="baby shoes"></td>
+                                    <td>Baby Shoes</td>
+                                    <td>Rs.1200</td>
+                                    <td><input type="number" min="1"></td>
+                                    <td>Rs.1200</td>
+                                    <td><button class="btn_remove"><i class="fa-regular fa-circle-xmark"></i></button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td><img src="./assets/images/sweater.jpg" alt="sweater"></td>
+                                    <td>Winter Sweater</td>
+                                    <td>Rs.1500</td>
+                                    <td><input type="number" min="1"></td>
+                                    <td>Rs.1500</td>
+                                    <td><button class="btn_remove"><i class="fa-regular fa-circle-xmark"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn_update">
+                            <button class="btn btn-warning">Update Cart</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="col col-sm-12 col-lg-8">
-                    <div class="right_details">
-                        <h1>Baby Shoes</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid minus cum nesciunt
-                            voluptates recusandae odio</p>
-                        <p class="price_">Rs.1200</p>
-                        <form>
-                            <div class="size_ mb-3">
-                                <button>S</button>
-                                <button class="active">M</button>
-                                <button>L</button>
-                                <button>XL</button>
-                            </div>
-                            <div class="quantity_">
-                                <input type="number" value="1" min="1" class="w-100">
-                            </div>
-                            <div class="btn_wrap mt-3">
-                                <button type="submit" class="btn btn-success">Add to Cart</button>
-                            </div>
-                        </form>
+                <div class="col col-sm-12 col-lg-3">
+                    <div class="checkout_table">
+                        <h2>Cart Totals</h2>
+                        <table>
+                            <tr>
+                                <th>Subtotal</th>
+                                <td>Rs.1200</td>
+                            </tr>
+                            <tr>
+                                <th>Shipping</th>
+                                <td>Free shipping to Bagmati</td>
+                            </tr>
+                            <tr>
+                                <th>Total</th>
+                                <td>Rs.1200</td>
+                            </tr>
+                        </table>
+                        <div class="btn_wrap">
+                            <button class="btn btn-success">Proceed to checkout</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row product_list_wrapper">
-                <div class="col col-sm-12 mt-2 mb-2">
-                    <h1>Related Products</h1>
-                </div>
-                <div class="col col-sm-12 col-xl-4 mb-4">
-                    <div class="card">
-                        <div class="img_wrap">
-                            <a href="details.html"><img src="./assets/images/mix_sweater.jpg" alt="mix sweater"></a>
-                        </div>
-                        <div class="hover_icon">
-                            <a href="#" class="icon_ wishlist"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#" class="icon_ cart_"><i class="fa-solid fa-cart-shopping"></i></a>
-                        </div>
-                        <div class="content_wrap p-3">
-                            <strong class="prod_name d-block text-center"><a href="details.html">Mix
-                                    Sweater</a></strong>
-                            <div class="d-flex flex-row justify-content-center">
-                                <span class="price_tag me-2">Rs. 1500</span>
-                                <span class="price_tag price_s"><s>Rs. 2000</s></span>
-                            </div>
-                            <div class="btn_wrap text-center m-2">
-                                <a href="cart.html" class="btn btn-success">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-sm-12 col-xl-4 mb-4">
-                    <div class="card">
-                        <div class="img_wrap">
-                            <a href="details.html"><img src="./assets/images/christmas_sweater.png"
-                                    alt="christmas_sweater"></a>
-                        </div>
-                        <div class="hover_icon">
-                            <a href="#" class="icon_ wishlist"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#" class="icon_ cart_"><i class="fa-solid fa-cart-shopping"></i></a>
-                        </div>
-                        <div class="content_wrap p-3">
-                            <strong class="prod_name d-block text-center"><a href="details.html">Baby Winter
-                                    Shoes</a></strong>
-                            <div class="d-flex flex-row justify-content-center">
-                                <span class="price_tag me-2">Rs. 1200</span>
-                                <span class="price_tag price_s"><s>Rs. 1500</s></span>
-                            </div>
-                            <div class="btn_wrap text-center m-2">
-                                <a href="cart.html" class="btn btn-success">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-sm-12 col-xl-4 mb-4">
-                    <div class="card">
-                        <div class="img_wrap">
-                            <a href="details.html"><img src="./assets/images/jacket.jpg" alt="jacket"></a>
-                        </div>
-                        <div class="hover_icon">
-                            <a href="#" class="icon_ wishlist"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#" class="icon_ cart_"><i class="fa-solid fa-cart-shopping"></i></a>
-                        </div>
-                        <div class="content_wrap p-3">
-                            <strong class="prod_name d-block text-center"><a href="details.html">Jacket</a></strong>
-                            <div class="d-flex flex-row justify-content-center">
-                                <span class="price_tag me-2">Rs. 1500</span>
-                                <span class="price_tag price_s"><s>Rs. 2000</s></span>
-                            </div>
-                            <div class="btn_wrap text-center m-2">
-                                <a href="cart.html" class="btn btn-success">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- product_list_wrapper -->
         </div>
     </div>
     <footer>
